@@ -39,7 +39,9 @@ const Contact = () => {
       <div className="">
         <div className="text-center">
           {/* add font Chango, Regular */}
-          <h1 className="text-[40px] text-[#FFFFFF] uppercase">contact</h1>
+          <h1 className="text-[40px] text-[#FFFFFF] uppercase mt-9 mb-6 font-Chango">
+            contact
+          </h1>
         </div>
       </div>
 
@@ -71,7 +73,7 @@ const Contact = () => {
                       type="text"
                       name="fullName"
                       id="fullName"
-                      className=" mt-[24px] mb-[16px] placeholder-white py-3 px-4 block w-full text-[16px] text-white  border-[#FFFFFF] bg-black border-[3px]"
+                      className=" mt-[24px] mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full text-[16px] text-white  border-[#FFFFFF] bg-black border-[3px]"
                     />
                     <ErrorMessage
                       name="fullName"
@@ -88,7 +90,7 @@ const Contact = () => {
                       type="text"
                       name="phoneNumber"
                       id="phoneNumber"
-                      className="mb-[16px] placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white  border-[#FFFFFF] bg-black"
+                      className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white  border-[#FFFFFF] bg-black"
                     />
                     <ErrorMessage
                       name="phoneNumber"
@@ -103,7 +105,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       autoComplete="Email"
-                      className=" mb-[16px] placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black "
+                      className=" mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black "
                     />
                     <ErrorMessage
                       name="email"
@@ -120,7 +122,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     rows="4"
-                    className="mb-[16px] placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black"
+                    className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black"
                   />
                   <ErrorMessage
                     name="message"
@@ -132,7 +134,7 @@ const Contact = () => {
 
               <div className="mt-6 grid">
                 <Button
-                  className="h-10 w-48"
+                  className="h-10 w-48 font-Helvetica text-[17px]"
                   type="submit"
                   style={{
                     backgroundColor: "#EB7513",

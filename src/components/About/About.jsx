@@ -6,28 +6,31 @@ const About = () => {
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
+
   const phoneNumber = "604-733-3323";
+
   return (
     <div className="bg-white h-[414px] flex flex-col justify-between mx-9">
-      <div className="mx-6">
-        <h1 className="text-[40px] uppercase text-center mt-[24px]">
-          about us
-        </h1>
+      <h1 className="text-[40px] font-Chango text-[#D6134B] uppercase text-center mt-[16px] mx-0">
+        about us
+      </h1>
+
+      <div className="mx-6 mb-16">
+        {" "}
+        {/* Add marginBottom: "16px" */}
         {/* font Roboto, Regular */}
-        <p className="text-[16px] text-left mb-8 leading-[32px]">
+        <p className="text-[16px] text-left mb-4 font-Roboto leading-[32px]">
           Welcome to Taco Loco, where our passion for fresh ingredients and bold
           flavors comes together to redefine the taco experience in the vibrant
           heart of Kitsilano. If you are looking for reservations or have
-          general inquires, please call{" "}
+          general inquiries, please call
+          <br />{" "}
           <a className="text-[#2EA9A3] underline" href={`tel:${phoneNumber}`}>
             {phoneNumber}
           </a>
         </p>
-      </div>
-
-      <div className="mx-6 mb-8">
         <Button
-          className="h-10 w-48"
+          className="h-10 w-48 font-Helvetica text-[17px]"
           type="submit"
           style={{
             backgroundColor: "#EB7513",

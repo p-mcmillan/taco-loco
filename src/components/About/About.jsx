@@ -10,7 +10,7 @@ const About = () => {
   const phoneNumber = "604-733-3323";
 
   return (
-    <div className="bg-white h-[414px] flex flex-col justify-between md:justify-normal mx-9 md:mx-0 md:w-[467px] md:h-[765px]">
+    <div className="bg-white h-[414px] w-[318px] flex flex-col justify-between md:justify-normal mx-9 md:mx-0 md:w-[467px] md:h-[765px]">
       <h1 className="text-[40px] md:text-[48px] font-Chango text-[#D6134B] uppercase text-center mt-[16px] md:mt-[160px] mx-0 md:static md:top-[30%]">
         about us
       </h1>

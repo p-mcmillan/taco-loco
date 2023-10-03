@@ -8,13 +8,14 @@ import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Menu from "./components/Menu/Menu";
 import Hero2 from "./components/Hero/Hero2";
+import Nav from "./components/Nav/Nav";
 
 function App() {
   const [menuItemsData, setmenuItemsData] = useState(menuItems);
 
   return (
     <>
-      <div>Hello</div>
+      <Nav />
       <Hero />
       <Menu menuItemsData={menuItemsData} />
       <div className="flex flex-col md:flex-row gap-0 items-center md:m-0 justify-center md:h-[765px]">

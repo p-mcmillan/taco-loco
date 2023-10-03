@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 
 const Delivery = () => {
   return (
-    <div className="bg-[#E8E8E8] h-[414px] flex flex-col justify-between md:justify-normal mx-9 md:mx-0 md:w-[467px] md:h-[765px]">
+    <div className="bg-[#E8E8E8] h-[414px] w-[318] flex flex-col justify-between md:justify-normal mx-9 md:mx-0 md:w-[467px] md:h-[765px]">
       <div className="mx-6">
         <h1 className="text-[40px] md:text-[48px] uppercase font-Chango text-[#D6134B] text-center mt-[24px] md:mt-[160px]">
           delivery

@@ -9,6 +9,9 @@ import img01Hi from "../../assets/images/IMG_6187@2x.png";
 import img02Lo from "../../assets/images/IMG_6163.png";
 import img02Hi from "../../assets/images/IMG_6163@2x.png";
 
+export const placeholderSrc = "path/to/placeholder/image.png";
+export const src = "path/to/high-quality/image.png";
+
 const Hero = () => {
   return (
     <div>

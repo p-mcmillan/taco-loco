@@ -17,9 +17,11 @@ function App() {
       <div>Hello</div>
       <Hero />
       <Menu menuItemsData={menuItemsData} />
-      <Hero2 />
-      <About />
-      <Delivery />
+      <div className="flex flex-col md:flex-row gap-0 items-center md:m-0 justify-center md:h-[765px]">
+        <Hero2 />
+        <About />
+        <Delivery />
+      </div>
       <Contact />
       <Footer />
     </>

@@ -35,17 +35,17 @@ const Contact = () => {
   });
 
   return (
-    <div className="mx-9 mb-[61px]">
+    <div className="mx-9 mb-[61px] flex flex-col justify-center items-center h-full">
       <div className="">
         <div className="text-center">
           {/* add font Chango, Regular */}
-          <h1 className="text-[40px] text-[#FFFFFF] uppercase mt-9 mb-6 font-Chango">
+          <h1 className="text-[40px] text-[#FFFFFF] uppercase mt-9 mb-6 md:mb-8 font-Chango md:text-[78px]">
             contact
           </h1>
         </div>
       </div>
 
-      <div className="max-w-lg mx-auto">
+      <div className="md:w-[1540] mx-auto">
         {isSubmitted ? (
           <div className="flex flex-col border p-4 sm:p-6 lg:p-8 dark:border-[#030201]">
             <h2 className="mb-8 text-xl text-[#030201]">
@@ -65,15 +65,15 @@ const Contact = () => {
             validationSchema={validationSchema}
           >
             <Form>
-              <div className="grid gap-4 lg:gap-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+              <div className="grid gap-4 md:flex md:gap-x-12">
+                <div className="grid grid-cols-1  gap-4">
                   <div>
                     <Field
                       placeholder="Full Name"
                       type="text"
                       name="fullName"
                       id="fullName"
-                      className=" mt-[24px] mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full text-[16px] text-white  border-[#FFFFFF] bg-black border-[3px]"
+                      className=" mt-[24px] md:mt-0 mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-[318px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black border-[3px] md:w-[658px] md:h-[51px]"
                     />
                     <ErrorMessage
                       name="fullName"
@@ -81,16 +81,13 @@ const Contact = () => {
                       className="text-red-500"
                     />
                   </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                   <div>
                     <Field
                       placeholder="Phone Number"
                       type="text"
                       name="phoneNumber"
                       id="phoneNumber"
-                      className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white  border-[#FFFFFF] bg-black"
+                      className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black md:w-[658px] md:h-[51px]"
                     />
                     <ErrorMessage
                       name="phoneNumber"
@@ -105,7 +102,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       autoComplete="Email"
-                      className=" mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black "
+                      className=" mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black md:w-[658px] md:h-[51px]"
                     />
                     <ErrorMessage
                       name="email"
@@ -122,7 +119,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     rows="4"
-                    className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] text-white border-[#FFFFFF] bg-black"
+                    className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black md:w-[658px] md:h-[229px]"
                   />
                   <ErrorMessage
                     name="message"

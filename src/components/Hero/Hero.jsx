@@ -1,4 +1,4 @@
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,13 +9,17 @@ import img01Hi from "../../assets/images/IMG_6187@2x.png";
 import img02Lo from "../../assets/images/IMG_6163.png";
 import img02Hi from "../../assets/images/IMG_6163@2x.png";
 
-export const placeholderSrc = "path/to/placeholder/image.png";
-export const src = "path/to/high-quality/image.png";
+// put images in a array and optomize
 
 const Hero = () => {
   return (
-    <div>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+    <div className="">
+      <Swiper
+        navigation={true}
+        centeredSlides={true}
+        modules={[Navigation]}
+        centeredSlidesBounds={true}
+      >
         <SwiperSlide>
           <ImageLoader src={img01Hi} placeholderSrc={img01Lo} />
         </SwiperSlide>

@@ -131,7 +131,7 @@ const Contact = () => {
 
               <div className="mt-6 grid">
                 <Button
-                  className="h-10 w-48 font-Helvetica text-[17px]"
+                  className="h-10 w-48 font-Helvetica text-[19px] font-bold	"
                   type="submit"
                   style={{
                     backgroundColor: "#EB7513",

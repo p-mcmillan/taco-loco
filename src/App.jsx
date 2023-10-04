@@ -1,4 +1,4 @@
-// import "./App.css";
+import "./App.css";
 import { useState } from "react";
 import { menuItems } from "./assets/menu/menu";
 import About from "./components/About/About";

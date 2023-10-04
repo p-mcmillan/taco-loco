@@ -4,13 +4,18 @@ export default {
   theme: {
     extend: {
       placeholderColor: {
-        white: "#ffffff", // Define the placeholder color you want to use
+        white: "#ffffff",
       },
       fontFamily: {
         Chango: ["Chango", "Gabarito"],
         Roboto: ["Roboto", "sans-serif"],
         Chapillada: ["Chapillada"],
         Helvetica: ["Helvetica"],
+      },
+      colors: {
+        greenTaco: "#3f7118",
+        grayTaco: "#E8E8E8",
+        orangeTaco: "#eb7513",
       },
     },
   },

@@ -15,6 +15,7 @@ const Hero = () => {
   return (
     <div className="">
       <Swiper
+        className="pt-[54px]"
         navigation={true}
         centeredSlides={true}
         modules={[Navigation]}

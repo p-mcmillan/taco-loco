@@ -35,7 +35,10 @@ const Contact = () => {
   });
 
   return (
-    <div className="mx-9 mb-[61px] flex flex-col justify-center items-center h-full">
+    <div
+      id="contact"
+      className="mx-9 mb-[61px] flex flex-col justify-center items-center h-full"
+    >
       <div className="">
         <div className="text-center">
           {/* add font Chango, Regular */}
@@ -136,8 +139,6 @@ const Contact = () => {
                   style={{
                     backgroundColor: "#EB7513",
                     color: "white",
-                    height: "42px",
-                    width: "196px",
                   }}
                 >
                   Submit Now

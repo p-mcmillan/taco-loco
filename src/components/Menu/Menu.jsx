@@ -1,54 +1,24 @@
-// import PropTypes from "prop-types";
-
-// const Menu = ({ menuItemsData }) => {
-//   return (
-//     <div className="text-white mx-9">
-//       <h1 className="text-[40px] text-center">Our Menu</h1>
-
-//       {menuItemsData.map((section, index) => (
-//         <div key={index}>
-//           <h3>{section.name}</h3>
-//           {section.menu.map((menuItem, itemIndex) => (
-//             <div key={itemIndex}>
-//               <p>{menuItem.item}</p>
-//               <p>{menuItem.price}</p>
-//               {menuItem.side && <p>{menuItem.side}</p>}
-//               {menuItem.sidePrice && <p>{menuItem.sidePrice}</p>}
-//             </div>
-//           ))}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// Menu.propTypes = {
-//   menuItemsData: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       name: PropTypes.string.isRequired,
-//       menu: PropTypes.arrayOf(
-//         PropTypes.shape({
-//           item: PropTypes.string.isRequired,
-//           price: PropTypes.string.isRequired,
-//           side: PropTypes.string,
-//           sidePrice: PropTypes.string,
-//         })
-//       ).isRequired,
-//     })
-//   ).isRequired,
-// };
-
-// export default Menu;
-
 import PropTypes from "prop-types";
-
+import chili01 from "../../assets/logo/Group 22.png";
+import chili02 from "../../assets/logo/Group 22@2x.png";
+import onion01 from "../../assets/logo/onions_Self.png";
+import onion02 from "../../assets/logo/onions_Self@2x.png";
 const Menu = ({ menuItemsData }) => {
   return (
-    <div className="text-white mx-9 md:w-[1164px] md:mx-auto md:pb-[127px]">
+    <div
+      id="menu"
+      className="text-white mx-9 md:w-[1164px] md:mx-auto md:pb-[127px]"
+    >
       {/* font Chango, Regular */}
       <h1 className="text-[40px] text-center font-Chango md:text-[78px] md:mt-[99px] md:pt-0 md:tracking-normal">
         Our Menu
       </h1>
+
+      <img
+        src={chili01}
+        alt="chili"
+        className=" hidden md:flex absolute  right-[-20px] top-[1050px]"
+      />
       <div className="">
         {/* Chapillada doesnt come in 38px closest is 36px*/}
         <p className=" uppercase text-[48px] font-Chapillada text-greenTaco pb-6 pt-9">
@@ -226,6 +196,14 @@ const Menu = ({ menuItemsData }) => {
               <span className="font-bold">10.50</span>
             </p>
           </div>
+        </div>
+        <div className="absolute bg-black right-[-170px] top-[2570px] overflow-hidden w-[465.70px] h-[438px]">
+          <img
+            id="outter"
+            src={onion01}
+            alt="onion"
+            className="w-[465.70px] h-[438px] object-contain overflow-hidden	"
+          />
         </div>
 
         <div className="md:hidden">

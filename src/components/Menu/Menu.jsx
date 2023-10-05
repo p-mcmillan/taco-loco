@@ -7,10 +7,7 @@ const Menu = (props, menuItemsData) => {
   console.log(props);
   console.log(menuItemsData);
   return (
-    <div
-      id="carte"
-      className="text-white mx-9 md:w-[1164px] md:mx-auto md:pb-[127px]"
-    >
+    <div id="carte" className="text-white mx-9 md:w-[1164px] md:mx-auto ">
       {/* font Chango, Regular */}
       <h1 className="text-[40px] text-center font-Chango md:text-[78px] md:mt-[99px] md:pt-0 md:tracking-normal">
         Our Menu
@@ -185,7 +182,7 @@ const Menu = (props, menuItemsData) => {
           pico de gallo.
         </p>
       </div>
-      <div className="">
+      <div className="md:h-[400px]">
         {/* Chapillada doesnt come in 38px closest is 36px*/}
         <p className=" uppercase text-[48px] font-Chapillada text-greenTaco pb-6 pt-9">
           dessert
@@ -199,14 +196,17 @@ const Menu = (props, menuItemsData) => {
             </p>
           </div>
         </div>
-        {/* <div className="absolute bg-black right-[-170px] top-[2570px] overflow-hidden w-[465.70px] h-[438px]">
+        <div
+          id="onion"
+          className="relative right-[-1100px] top-[350px] overflow-hidden w-[465.70px] h-[438px] z-0"
+        >
           <img
             id="outter"
             src={onion01}
             alt="onion"
-            className="w-[465.70px] h-[438px] object-contain overflow-hidden	"
+            className="w-[465.70px] h-[438px] z-0 hidden object-contain overflow-hidden	"
           />
-        </div> */}
+        </div>
 
         <div className="md:hidden">
           {props.menuItemsData

@@ -15,16 +15,31 @@ import image08 from "../../assets/images/IMG_0954.jpg";
 import image09 from "../../assets/images/View_recent_photos_1 (2).jpeg";
 
 const Gallery = () => {
+  const breakpoints = {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  };
+
   return (
     <div id="gallery" className="gallery-container bg-greenTaco h-[800px]">
       <div className="">
-        <h1 className="text-[79px] font-Chango text-white text-center md:pt-[47px]">
+        <h1 className="text-[79px] font-Chango text-white text-center md:pt-[47px] my-12">
           Gallery
         </h1>
       </div>
       <div className="md:pt-[53px]">
         <Swiper
-          slidesPerView={4}
+          breakpoints={breakpoints}
           centeredSlides={true}
           spaceBetween={0}
           grabCursor={true}
@@ -32,7 +47,6 @@ const Gallery = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>

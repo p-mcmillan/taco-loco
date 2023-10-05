@@ -10,11 +10,11 @@
   width: 508px;
   height: 507px;
 }
-
+// HIDE IM MOBILE VIEW //
 @media (max-width: 786px) {
-  .gallery-container {
-    display: none;
-  }
+  // .gallery-container {
+  //   display: none;
+  // }
   .nav-skull {
     display: none;
   }
@@ -23,4 +23,22 @@
 .nav-skull {
   width: 48px;
   height: 48px;
+}
+
+#onion {
+  overflow: hidden;
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 465.7px; /* Set a maximum width to prevent overlapping */
+  position: relative; /* Ensure relative positioning */
+  overflow: hidden;
+  display: none;
+}
+
+#outter {
+  width: 100%; /* Set the width to 100% of the parent container */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+  position: relative; /* Ensure relative positioning */
+  left: 0; /* Ensure no left offset */
+  overflow: hidden;
+  display: none;
 }

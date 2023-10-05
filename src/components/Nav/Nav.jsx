@@ -44,7 +44,7 @@ const Nav = () => {
           />
         </div>
         <div className="md:w-[282px] w-[40%] md:fixed flex justify-center mt-[15.29px] md:mb-4  ">
-          <img src={logo} alt="logo" />
+          <img href="/" src={logo} alt="logo" />
         </div>
 
         <div

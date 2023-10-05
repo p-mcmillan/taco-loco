@@ -18,9 +18,14 @@ const Contact = () => {
       setIsSubmitted(true);
     } catch (error) {
       console.error(error, "Oops, post didn't work, sorry.");
+      showSubmissionError();
     } finally {
       actions.setSubmitting(false);
     }
+  };
+
+  const showSubmissionError = () => {
+    alert("Failed to submit. Please try try to call.");
   };
 
   const validationSchema = Yup.object({
@@ -41,7 +46,6 @@ const Contact = () => {
     >
       <div className="">
         <div className="text-center">
-          {/* add font Chango, Regular */}
           <h1 className="text-[40px] text-[#FFFFFF] uppercase mt-9 mb-6 md:mb-8 font-Chango md:text-[78px]">
             contact
           </h1>

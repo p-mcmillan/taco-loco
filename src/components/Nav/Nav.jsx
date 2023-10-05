@@ -1,50 +1,48 @@
 import { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import logo from "../../assets/logo/Logo - Vert.svg";
 import Button from "../Button/Button";
-import { useMediaQuery } from "react-responsive";
+import skull from "../../assets/logo/TacoLoco_logo.svg";
 import "../../styles/css/styles.scss";
 
 const Nav = () => {
   let Links = [
-    { name: "Our Menu", link: "/" },
-    { name: "Gallery", link: "/" },
-    { name: "Contact Us", link: "/" },
+    { name: "Our Menu", link: "#carte" },
+    { name: "Gallery", link: "#gallery" },
+    { name: "Contact Us", link: "#contact" },
   ];
+  const handleButtonClick = () => {
+    alert("This function is not functional yet.");
+  };
 
   const [open, setOpen] = useState(false);
 
-  // Use the media query hook to determine if the viewport is md or larger
   const isDesktopOrMd = useMediaQuery({ query: "(min-width: 768px)" });
-  const desktop = isDesktopOrMd.toString();
-  console.log(isDesktopOrMd, "md open");
-  console.log(desktop, "string");
+
   useEffect(() => {
     const primaryNav = document.querySelector("#main-navigation");
-    const desktopHide = document.querySelector("#desktop-navigation");
 
     if (open) {
       primaryNav.setAttribute("data-visible", "false");
-      // primaryNav.setAttribute("aria-expanded", "false");
     } else {
       primaryNav.setAttribute("data-visible", "true");
-      // primaryNav.setAttribute("aria-expanded", "true");
     }
+  }, [open, isDesktopOrMd]);
 
-    console.log(open, "open");
-    console.log(isDesktopOrMd, "isDesktopOrMd");
-
-    // if (isDesktopOrMd) {
-    //   desktopHide.setAttribute("hidden-visible", "true");
-    // } else {
-    //   desktopHide.setAttribute("hidden-visible", "false");
-    // }
-  }, [open, isDesktopOrMd]); // Run this effect whenever the 'open' state changes
-
-  // Rest of your component code...
+  const handleMenuItemClick = () => {
+    setOpen(false);
+  };
 
   return (
     <header className="md:h-[81px] h-[54px] w-screen z-50 fixed bg-black">
       <div className=" md:ml-[148px] md:mr-[140px] md:flex md:items-center justify-between h-full  ml-[20px]">
+        <div>
+          <img
+            className="nav-skull fixed left-[80px] top-[17px]"
+            src={skull}
+            alt="skull"
+          />
+        </div>
         <div className="md:w-[282px] w-[40%] md:fixed flex justify-center mt-[15.29px] md:mb-4  ">
           <img src={logo} alt="logo" />
         </div>
@@ -69,7 +67,6 @@ const Nav = () => {
             data-visible="false"
             aria-expanded="false"
             className={`mobile-navigation-toggle pr-[34px] pd:mr-0 md:gap-20 md:flex fixed bg-black md:left-auto md:top-auto md:bottom-auto md:right-auto md:relative ${
-              // Apply the translate-x class only if the viewport is not md or larger
               open && !isDesktopOrMd
                 ? "left-[27.5%] top-0 bottom-0 right-0"
                 : ""
@@ -81,6 +78,7 @@ const Nav = () => {
                 className=" md:my-0 my-12 text-white font- text-right md:flex md:items-center"
               >
                 <a
+                  onClick={handleMenuItemClick}
                   href={link.link}
                   className=" font-Roboto font-bold text-[19px]"
                 >
@@ -88,12 +86,12 @@ const Nav = () => {
                 </a>
               </li>
             ))}
-            {/*   TO HIDE BUTTON hidden md:flex */}
 
             {/* Desktop NAV */}
 
             <div className="text-right hidden md:flex">
               <Button
+                onClick={handleButtonClick}
                 style={{
                   color: "white",
                   height: "45px",
@@ -113,8 +111,7 @@ const Nav = () => {
           <ul
             data-visible="false"
             aria-expanded="false"
-            className={`mobile-navigation-toggle pr-[34px] pd:mr-0 md:gap-20 md:flex fixed bg-black md:left-auto md:top-auto md:bottom-auto md:right-auto md:relative ${
-              // Apply the translate-x class only if the viewport is not md or larger
+            className={`mobile-navigation-toggle pd:mr-0 md:gap-20 md:flex fixed bg-black md:left-auto md:top-auto md:bottom-auto md:right-auto md:relative ${
               open && !isDesktopOrMd
                 ? "left-[27.5%] top-0 bottom-0 right-0"
                 : ""
@@ -133,12 +130,10 @@ const Nav = () => {
                 </a>
               </li>
             ))}
-            {/*   TO HIDE BUTTON hidden md:flex */}
-
-            {/* Desktop NAV */}
 
             <div className="text-right hidden md:flex">
               <Button
+                onClick={handleButtonClick}
                 style={{
                   color: "white",
                   height: "45px",

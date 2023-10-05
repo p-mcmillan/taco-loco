@@ -1,8 +1,8 @@
+import ImageLoader from "../ImageLoader/ImageLoder";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+// import "swiper/css";
 import "swiper/css/navigation";
-import ImageLoader from "../ImageLoader/ImageLoder";
 
 import img01Lo from "../../assets/images/IMG_6187.png";
 import img01Hi from "../../assets/images/IMG_6187@2x.png";

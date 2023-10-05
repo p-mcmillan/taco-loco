@@ -1,3 +1,10 @@
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
 import { menuItems } from "./assets/menu/menu";
@@ -10,31 +17,24 @@ import Menu from "./components/Menu/Menu";
 import Hero2 from "./components/Hero/Hero2";
 import Nav from "./components/Nav/Nav";
 import Gallery from "./components/Gallery/Gallery";
+import NotFound from "./pages/404/notFound";
+import Home from "./pages/Home/Home";
 
 function App() {
   const [menuItemsData, setmenuItemsData] = useState(menuItems);
+  console.log(menuItemsData, "app");
 
   return (
-    <>
+    <Router>
       <Nav />
-      <Hero />
-      {/* <Menu menuItemsData={menuItemsData} /> */}
-
-      {/*  */}
-      <div className="flex flex-col items-center  justify-center">
-        <div className="flex flex-col md:flex-row gap-0 items-center md:m-0 justify-center md:h-[765px] md:w-[1402px]">
-          <Hero2 />
-          <About />
-          <Delivery />
-        </div>
-      </div>
-      <Contact />
-      <Gallery />
+      <Routes>
+        <Route path="/" element={<Home menuItemsData={menuItemsData} />} />
+        <Route path="/notFound" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/notFound" />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
 
 export default App;
-
-// old flex flex-col md:flex-row gap-0 items-center md:m-0 justify-between md:h-[765px] md:w-[1402px]

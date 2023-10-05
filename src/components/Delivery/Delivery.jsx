@@ -1,6 +1,9 @@
 import Button from "../Button/Button";
 
 const Delivery = () => {
+  const handleButtonClick = () => {
+    alert("This function is not functional yet.");
+  };
   return (
     <div className="bg-grayTaco h-[414px] w-[318px] md:w-[468px] md:h-[765px] flex-1 z-49 ">
       <div className="h-[414px] md:ml-[56px] md:mt-[192px] md:mr-[55px] ml-[26px] mr-[24px]">
@@ -18,6 +21,7 @@ const Delivery = () => {
 
         <div className=" font-Helvetica font-bold text-[19px] md:mt-1">
           <Button
+            onClick={handleButtonClick}
             className="h-10 w-48"
             type="submit"
             style={{

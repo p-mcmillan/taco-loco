@@ -3,10 +3,12 @@ import chili01 from "../../assets/logo/Group 22.png";
 import chili02 from "../../assets/logo/Group 22@2x.png";
 import onion01 from "../../assets/logo/onions_Self.png";
 import onion02 from "../../assets/logo/onions_Self@2x.png";
-const Menu = ({ menuItemsData }) => {
+const Menu = (props, menuItemsData) => {
+  console.log(props);
+  console.log(menuItemsData);
   return (
     <div
-      id="menu"
+      id="carte"
       className="text-white mx-9 md:w-[1164px] md:mx-auto md:pb-[127px]"
     >
       {/* font Chango, Regular */}
@@ -84,7 +86,7 @@ const Menu = ({ menuItemsData }) => {
           </div>
         </div>
         <div className="md:hidden">
-          {menuItemsData
+          {props.menuItemsData
             .filter((section) => section.name === "Enslasa Shared")
             .map((section, index) => (
               <div key={index} className="">
@@ -151,7 +153,7 @@ const Menu = ({ menuItemsData }) => {
           </div>
         </div>
         <div className="md:hidden">
-          {menuItemsData
+          {props.menuItemsData
             .filter((section) => section.name === "tacos")
             .map((section, index) => (
               <div key={index} className="">
@@ -197,17 +199,17 @@ const Menu = ({ menuItemsData }) => {
             </p>
           </div>
         </div>
-        <div className="absolute bg-black right-[-170px] top-[2570px] overflow-hidden w-[465.70px] h-[438px]">
+        {/* <div className="absolute bg-black right-[-170px] top-[2570px] overflow-hidden w-[465.70px] h-[438px]">
           <img
             id="outter"
             src={onion01}
             alt="onion"
             className="w-[465.70px] h-[438px] object-contain overflow-hidden	"
           />
-        </div>
+        </div> */}
 
         <div className="md:hidden">
-          {menuItemsData
+          {props.menuItemsData
             .filter((section) => section.name === "dessert")
             .map((section, index) => (
               <div key={index} className="">
@@ -245,6 +247,9 @@ Menu.propTypes = {
       ).isRequired,
     })
   ).isRequired,
+};
+Menu.defaultProps = {
+  menuItemsData: [], // Set a default value as an empty array or an appropriate default value
 };
 
 export default Menu;

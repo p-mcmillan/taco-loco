@@ -1,10 +1,6 @@
-#main-navigation[data-visible="true"] {
+#main-navigation[data-visible=true] {
   visibility: hidden;
 }
-
-// #mobile-navigation[hidden-visible="true"] {
-//   display: none;
-// }
 
 .mySwiper img {
   width: 508px;
@@ -19,8 +15,7 @@
     display: none;
   }
 }
-
 .nav-skull {
   width: 48px;
   height: 48px;
-}
+}/*# sourceMappingURL=styles.css.map */

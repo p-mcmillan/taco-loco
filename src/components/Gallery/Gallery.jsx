@@ -1,20 +1,15 @@
+import { useState } from "react";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/css/styles.css";
 
-import image01 from "../../assets/images/IMG_0025.jpg";
-import image02 from "../../assets/images/IMG_0032.jpg";
-import image03 from "../../assets/images/IMG_0043.jpg";
-import image04 from "../../assets/images/IMG_0057.jpg";
-import image05 from "../../assets/images/IMG_0059.jpg";
-import image06 from "../../assets/images/IMG_0949.jpg";
-import image07 from "../../assets/images/IMG_0987.jpg";
-import image08 from "../../assets/images/IMG_0954.jpg";
-import image09 from "../../assets/images/View_recent_photos_1 (2).jpeg";
+import images from "../../assets/images/images";
 
 const Gallery = () => {
+  const [clickedIndex, setClickedIndex] = useState(null);
+
   const breakpoints = {
     320: {
       slidesPerView: 1,
@@ -33,11 +28,11 @@ const Gallery = () => {
   return (
     <div id="gallery" className="gallery-container bg-greenTaco h-[800px]">
       <div className="">
-        <h1 className="text-[79px] font-Chango text-white text-center md:pt-[47px] my-12">
+        <h1 className="md:text-[79px] text-[40px] font-Chango text-white text-center md:pt-[47px] my-12 pt-[16px]">
           Gallery
         </h1>
       </div>
-      <div className="md:pt-[53px]">
+      <div className="">
         <Swiper
           breakpoints={breakpoints}
           centeredSlides={true}
@@ -47,45 +42,18 @@ const Gallery = () => {
           pagination={{
             clickable: true,
           }}
-          className="mySwiper"
+          className="mySwiper z-0"
         >
-          <SwiperSlide>
-            <img src={image01} alt="image-01" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image02} alt="image-02" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            {" "}
-            <img src={image03} alt="image-03" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image04} alt="image-04" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image05} alt="image-05" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image06} alt="image-06" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image07} alt="image-07" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            {" "}
-            <img src={image08} alt="image-08" />
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <img src={image09} alt="image-09" />
-          </SwiperSlide>
+          {images.map((image, index) => (
+            <SwiperSlide key={image.id}>
+              <img
+                className={clickedIndex === index ? "clicked-image z-50" : ""}
+                src={image.url}
+                alt={`image-${image.id}`}
+                onClick={() => setClickedIndex(index)}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

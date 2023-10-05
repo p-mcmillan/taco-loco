@@ -20,13 +20,13 @@ const Menu = (props, menuItemsData) => {
       />
       <div className="">
         {/* Chapillada doesnt come in 38px closest is 36px*/}
-        <p className=" uppercase text-[48px] font-Chapillada text-greenTaco pb-6 pt-9">
+        <p className=" uppercase text-[48px] font-Chapillada text-greenWrong pb-6 pt-9">
           enslasa + shared
         </p>
         {/* Desktop */}
         <div className="hidden md:block text-[27px] space-y-6 font-Roboto pb-6">
           <div>
-            <p className="md:text-[27px]">
+            <p className="md:text-[27px] font-normal">
               TIJUANA CAESAR SALAD, CHARRED ROMAINE HEARTS, CROUTONS <br />{" "}
               CAPER DRESSING………………………………………………………………………………………………………..
               <span className="font-bold">SM 9.00 LG 18.00</span>
@@ -106,10 +106,10 @@ const Menu = (props, menuItemsData) => {
       </div>
       <div className="">
         <div className="mt-4 mb-2">
-          <p className="uppercase text-[48px] font-Chapillada text-greenTaco pt-3 leading-[36px]">
+          <p className="uppercase text-[48px] font-Chapillada text-greenWrong pt-3 leading-[36px]">
             tacos
           </p>
-          <p className="uppercase text-[17px] font-Roboto text-greenTaco font-bold pb-6 leading-[36px] md:text-[27px]">
+          <p className="uppercase text-[17px] font-Roboto  text-greenWrong font-bold pb-6 leading-[36px] md:text-[27px]">
             choice of corn or flour tortillas:
           </p>
         </div>
@@ -173,7 +173,7 @@ const Menu = (props, menuItemsData) => {
       </div>
       <div className="">
         <p className="uppercase text-[17px] md:text-[27px]">
-          <span className="text-greenTaco font-Roboto font-bold md:mb-6 md:mr-2 block md:inline-block">
+          <span className=" text-greenWrong font-Roboto font-bold md:mb-6 md:mr-2 block md:inline-block">
             sides 2$ each:
           </span>
           <br className="md:mb-6" />
@@ -184,7 +184,7 @@ const Menu = (props, menuItemsData) => {
       </div>
       <div className="md:h-[400px]">
         {/* Chapillada doesnt come in 38px closest is 36px*/}
-        <p className=" uppercase text-[48px] font-Chapillada text-greenTaco pb-6 pt-9">
+        <p className=" uppercase text-[48px] font-Chapillada  text-greenWrong pb-6 pt-9">
           dessert
         </p>
         <div className="hidden md:block text-[27px] space-y-9 font-Roboto pb-6">

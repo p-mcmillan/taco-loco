@@ -3,7 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import logo from "../../assets/logo/Logo - Vert.svg";
 import Button from "../Button/Button";
 import skull from "../../assets/logo/TacoLoco_logo.svg";
-import "../../styles/css/styles.scss";
+import "../../styles/css/styles.css";
 
 const Nav = () => {
   let Links = [
@@ -44,7 +44,9 @@ const Nav = () => {
           />
         </div>
         <div className="md:w-[282px] w-[40%] md:fixed flex justify-center mt-[15.29px] md:mb-4  ">
-          <img href="/" src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
 
         <div
@@ -89,7 +91,10 @@ const Nav = () => {
 
             {/* Desktop NAV */}
 
-            <div className="text-right hidden md:flex">
+            <div
+              id="nav-button"
+              className="text-right hidden font-Roboto md:flex"
+            >
               <Button
                 onClick={handleButtonClick}
                 style={{
@@ -97,6 +102,7 @@ const Nav = () => {
                   height: "45px",
                   width: "145px",
                   padding: "0",
+                  font: "Roboto",
                 }}
               >
                 Order Now
@@ -139,6 +145,7 @@ const Nav = () => {
                   height: "45px",
                   width: "145px",
                   padding: "0",
+                  fontFamily: "Roboto",
                 }}
               >
                 Order Now

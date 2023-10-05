@@ -1,13 +1,14 @@
 import Button from "../Button/Button";
 
 const About = () => {
-  const emailAddress = "example@example.com";
+  const emailAddress = "sanjay@tacolocokits.com";
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${emailAddress}`;
   };
 
   const phoneNumber = "   604-733-3323";
+  const tel = "+1-604-363-3003";
 
   return (
     <div className="bg-white h-[414px] w-[318px] md:w-[468px] md:h-[765px] flex-1">
@@ -28,7 +29,7 @@ const About = () => {
             <span className="md:hidden">
               <br />
             </span>
-            <a className="text-greenTaco underline" href={`tel:${phoneNumber}`}>
+            <a className="text-greenTaco underline" href={`tel:${tel}`}>
               {phoneNumber}
             </a>
           </p>

@@ -16,6 +16,7 @@ export default {
         greenTaco: "#3f7118",
         grayTaco: "#E8E8E8",
         orangeTaco: "#eb7513",
+        greenWrong: "#2EA9A3",
       },
     },
   },

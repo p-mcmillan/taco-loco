@@ -19,7 +19,7 @@ const Delivery = () => {
           </p>
         </div>
 
-        <div className=" font-Helvetica font-bold text-[19px] md:mt-1">
+        <div className=" font-Helvetica font-bold text-[19px] md:mt-1 pt-[155px] md:pt-0">
           <Button
             onClick={handleButtonClick}
             className="h-10 w-48"

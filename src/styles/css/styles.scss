@@ -18,6 +18,14 @@
   .nav-skull {
     display: none;
   }
+
+  #notFound {
+    height: calc(100vh - 85px);
+  }
+}
+
+#notFound {
+  height: calc(100vh - 54px);
 }
 
 .nav-skull {
@@ -40,5 +48,27 @@
   position: relative; /* Ensure relative positioning */
   left: 0; /* Ensure no left offset */
   overflow: hidden;
+  display: none;
+}
+
+#nav-btn {
+  font-family: Roboto;
+}
+
+.clicked-image {
+  position: absolute;
+  z-index: 9999;
+  transform: scale(1.2); /* Increase the size by 20% */
+  transition: transform 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.swiper-button-next {
+  color: white;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
+.swiper-button-prev {
   display: none;
 }

@@ -6,7 +6,6 @@ import {
   Navigate,
 } from "react-router-dom";
 import "../../App.css";
-import { useState } from "react";
 
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
@@ -29,8 +28,8 @@ const Home = (props) => {
           <Delivery />
         </div>
       </div>
-      <Contact />
       <Gallery />
+      <Contact />
     </>
   );
 };

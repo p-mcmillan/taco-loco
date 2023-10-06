@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
-import logo from "../../assets/logo/Logo - Vert.svg";
+import logo from "../../assets/logo/Logo-Vert.svg";
 import Button from "../Button/Button";
 import skull from "../../assets/logo/TacoLoco_logo.svg";
 import "../../styles/css/styles.css";

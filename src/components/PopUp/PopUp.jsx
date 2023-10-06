@@ -15,12 +15,15 @@ const PopUp = ({ openPopUp, closePopUp, image }) => {
       onClick={handleLosePopUp}
       className="fixed inset-0 bg-black flex justify-center items-center bg-opacity-20 backdrop-blur-sm"
     >
-      <div className="p-2 bg-white w-10/12 md:w-1/2 lg:1/3 shadow-inner border-e-emerald-600 rounded-lg py-5">
+      <div
+        className="p-1 bg-black
+       ms:w-5/12 md:w-1/3 shadow-inner border-e-emerald-600 rounded-lg py-5"
+      >
         <div className="w-full h-full p-3 justify-center items-center">
           <img
             src={image.url}
             alt={`popup-image-${image.id}`}
-            className="w-full h-auto"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

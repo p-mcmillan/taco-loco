@@ -8,7 +8,7 @@ import img07 from "../../assets/images/IMG_0987.jpg";
 import img08 from "../../assets/images/IMG_0954.jpg";
 import img09 from "../../assets/images/View_recent_photos_1 (2).jpeg";
 
-const images = [
+const imagesGallery = [
   { id: 1, url: img01 },
   { id: 2, url: img02 },
   { id: 3, url: img03 },
@@ -20,4 +20,4 @@ const images = [
   { id: 9, url: img09 },
 ];
 
-export default images;
+export default imagesGallery;

@@ -1,22 +1,19 @@
 import PropTypes from "prop-types";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { useState } from "react";
 import "../../App.css";
-
 import About from "../../components/About/About";
 import Contact from "../../components/Contact/Contact";
 import Delivery from "../../components/Delivery/Delivery";
 import Hero from "../../components/Hero/Hero";
 import Menu from "../../components/Menu/Menu";
 import Hero2 from "../../components/Hero/Hero2";
-
 import Gallery from "../../components/Gallery/Gallery";
+import PopUp from "../../components/PopUp/PopUp";
+
 const Home = (props) => {
-  console.log(props, "home");
+  const [openPopup, setOpenPopup] = useState(false);
+
+  const HandleRemovePopUp = () => setOpenPopup(false);
   return (
     <>
       <Hero />
@@ -28,7 +25,10 @@ const Home = (props) => {
           <Delivery />
         </div>
       </div>
-      <Gallery />
+      <Gallery setOpenPopup={setOpenPopup} />
+
+      <PopUp openPopUp={openPopup} closePopUp={HandleRemovePopUp} />
+
       <Contact />
     </>
   );

@@ -1,14 +1,20 @@
-import { useState } from "react";
-import { Pagination } from "swiper/modules";
+import PropTypes from "prop-types";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/css/styles.css";
+import images from "../../assets/images/imagesGallery";
+import PopUp from "../PopUp/PopUp";
 
-import images from "../../assets/images/images";
+const Gallery = ({ setOpenPopup }) => {
+  const HandleRemovePopUp = () => setOpenPopup(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-const Gallery = () => {
-  const [clickedIndex, setClickedIndex] = useState(null);
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setOpenPopup(true);
+  };
 
   const breakpoints = {
     320: {
@@ -32,6 +38,7 @@ const Gallery = () => {
           Gallery
         </h1>
       </div>
+
       <div className="">
         <Swiper
           breakpoints={breakpoints}
@@ -42,22 +49,33 @@ const Gallery = () => {
           pagination={{
             clickable: true,
           }}
+          navigation={true}
           className="mySwiper z-0"
         >
-          {images.map((image, index) => (
+          {images.map((image) => (
             <SwiperSlide key={image.id}>
               <img
-                className={clickedIndex === index ? "clicked-image z-50" : ""}
+                className="object-cover"
+                onClick={() => handleImageClick(image)}
                 src={image.url}
                 alt={`image-${image.id}`}
-                onClick={() => setClickedIndex(index)}
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+      {selectedImage && (
+        <PopUp
+          openPopUp={true}
+          closePopUp={() => setSelectedImage(null)}
+          image={selectedImage}
+        />
+      )}
     </div>
   );
+};
+Gallery.propTypes = {
+  setOpenPopup: PropTypes.func.isRequired,
 };
 
 export default Gallery;

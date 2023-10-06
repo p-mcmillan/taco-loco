@@ -22,7 +22,6 @@ import Home from "./pages/Home/Home";
 
 function App() {
   const [menuItemsData, setmenuItemsData] = useState(menuItems);
-  console.log(menuItemsData, "app");
 
   return (
     <Router>

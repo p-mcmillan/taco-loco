@@ -8,7 +8,7 @@ const About = () => {
   };
 
   const phoneNumber = "   604-733-3323";
-  const tel = "+1-604-363-3003";
+  const tel = "+1-604-773-3323";
 
   return (
     <div className="bg-white h-[414px] w-[318px] md:w-[468px] md:h-[765px] flex-1">

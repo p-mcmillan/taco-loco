@@ -3,9 +3,7 @@ import chili01 from "../../assets/logo/Group 22.png";
 import chili02 from "../../assets/logo/Group 22@2x.png";
 import onion01 from "../../assets/logo/onions_Self.png";
 import onion02 from "../../assets/logo/onions_Self@2x.png";
-const Menu = (props, menuItemsData) => {
-  console.log(props);
-  console.log(menuItemsData);
+const Menu = (props) => {
   return (
     <div id="carte" className="text-white mx-9 md:w-[1164px] md:mx-auto ">
       {/* font Chango, Regular */}

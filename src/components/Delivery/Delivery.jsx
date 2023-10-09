@@ -5,7 +5,7 @@ const Delivery = () => {
     alert("This function is not functional yet.");
   };
   return (
-    <div className="bg-grayTaco h-[414px] w-[318px] md:w-[468px] md:h-[765px] flex-1 z-49 ">
+    <div className="bg-grayTaco h-auto w-[318px] md:w-[468px] md:h-[765px] z-49 mx-[36px] 2xl:mx-0">
       <div className="h-[414px] md:ml-[56px] md:mt-[192px] md:mr-[55px] ml-[26px] mr-[24px]">
         <div className="h-[49px] w-[290px]">
           <h1 className="text-[40px] md:text-[48px] uppercase font-Chango text-[#D6134B] md:mb-[33px] mt-[25px] md:mt">

@@ -16,7 +16,6 @@ import img02Lo from "./images/IMG_6163.png";
 import img02Hi from "./images/IMG_6163@2x.png";
 
 //Logo
-
 import tacoLogo from "./logo/tacologo.svg";
 import tacoSkull from "./logo/TacoLoco_logo.svg";
 

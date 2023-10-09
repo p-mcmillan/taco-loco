@@ -6,10 +6,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/element/css/autoplay";
+import "../../styles/css/styles.css";
 
 import { img01Lo, img01Hi, img02Lo, img02Hi } from "../../assets/index";
 
 const Hero = () => {
+  document.documentElement.style.setProperty("--swiper-theme-color", "white");
+
   return (
     <div className="pt-[54px] md:pt-[81px] bg-black">
       <Swiper

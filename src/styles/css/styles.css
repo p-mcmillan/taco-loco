@@ -61,9 +61,8 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: var(--swiper-pagination-bottom, 8px);
-  bottom: var(--swiper-pagination-top, auto);
-  left: 0;
+  top: var(--swiper-pagination-bottom, auto);
+  bottom: var(--swiper-pagination-top, 8px);
   width: 100%;
 }
 
@@ -72,5 +71,9 @@
 }
 
 .swiper-button-prev {
+  display: none;
+}
+
+.swiper-button-prev:after {
   display: none;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Button from "../Button/Button";
-import "../../styles/css/styles.css";
 import { navLinks } from "../../constants";
 import { tacoLogo, tacoSkull } from "../../assets";
+import "../../styles/css/styles.css";
 
 const App = () => {
   const handleButtonClick = () => {
@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <div className="shadow-md w-full z-50 fixed bg-blue top-0 left-0 bg-black md:h-[81px] h-[54px]">
-      <div className="md:flex items-center bg-black w-full justify-between fixed py-4 2xl:pl-[148.23px] 2xl:pr-[140px] px-7 md:h-[81px] h-[54px]">
+      <div className="md:flex items-center bg-black w-full justify-between relative py-4 2xl:pl-[148.23px] 2xl:pr-[140px] px-7 md:h-[81px] h-[54px]">
         <div>
           <img
             className="nav-skull fixed left-[80px] top-[17px]"
@@ -29,7 +29,7 @@ const App = () => {
             alt="skull"
           />
         </div>
-        <div className="md:w-[282px] w-[40%] md:fixed flex justify-center md:mt-[15.29px] md:mb-4  mt-1.5">
+        <div className="md:w-[282px] w-[40%] md:fixed flex justify-center md:mt-[15.29px] md:mb-4 ">
           <a href="/">
             <img className="" src={tacoLogo} alt="logo" />
           </a>

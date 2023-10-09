@@ -4,13 +4,14 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import "./App.css";
 import { useState } from "react";
 import { menuItems } from "./assets/menu/menu";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import NotFound from "./pages/404/notFound";
 import Home from "./pages/Home/Home";
+import "./App.css";
+import "./styles/css/styles.css";
 
 function App() {
   const [menuItemsData] = useState(menuItems);

@@ -17,6 +17,9 @@ import img02Hi from "./images/IMG_6163@2x.png";
 
 //Logo
 
+import tacoLogo from "./logo/tacologo.svg";
+import tacoSkull from "./logo/TacoLoco_logo.svg";
+
 export {
   img01,
   img02,
@@ -31,4 +34,6 @@ export {
   img01Lo,
   img02Lo,
   img02Hi,
+  tacoLogo,
+  tacoSkull,
 };

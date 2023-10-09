@@ -1,54 +1,31 @@
-import { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
-import logo from "../../assets/logo/tacologo.svg";
+import { useState } from "react";
 import Button from "../Button/Button";
-import skull from "../../assets/logo/TacoLoco_logo.svg";
 import "../../styles/css/styles.css";
+import { navLinks } from "../../constants";
+import { tacoLogo, tacoSkull } from "../../assets";
 
-const Nav = () => {
-  let Links = [
-    { name: "Our Menu", link: "#carte" },
-    { name: "Gallery", link: "#gallery" },
-    { name: "Contact Us", link: "#contact" },
-  ];
+const App = () => {
   const handleButtonClick = () => {
     alert("This function is not functional yet.");
   };
 
   const [open, setOpen] = useState(false);
 
-  const isDesktopOrMd = useMediaQuery({ query: "(min-width: 768px)" });
-
-  useEffect(() => {
-    const primaryNav = document.querySelector("#main-navigation");
-
-    if (open) {
-      primaryNav.setAttribute("data-visible", "false");
-    } else {
-      primaryNav.setAttribute("data-visible", "true");
-    }
-  }, [open, isDesktopOrMd]);
-
-  const handleMenuItemClick = () => {
-    setOpen(false);
-  };
-
   return (
-    <header className="md:h-[81px] h-[54px] w-screen z-50 fixed bg-black">
-      <div className=" md:ml-[148px] md:mr-[140px] md:flex md:items-center justify-between h-full  ml-[20px]">
+    <div className="shadow-md w-full z-50 fixed bg-blue top-0 left-0 bg-black md:h-[81px] h-[54px]">
+      <div className="md:flex items-center bg-black w-full justify-between fixed py-4 2xl:pl-[148.23px] 2xl:pr-[140px] px-7 md:h-[81px] h-[54px]">
         <div>
           <img
             className="nav-skull fixed left-[80px] top-[17px]"
-            src={skull}
+            src={tacoSkull}
             alt="skull"
           />
         </div>
-        <div className="md:w-[282px] w-[40%] md:fixed flex justify-center mt-[15.29px] md:mb-4  ">
+        <div className="md:w-[282px] w-[40%] md:fixed flex justify-center md:mt-[15.29px] md:mb-4  mt-1.5">
           <a href="/">
-            <img src={logo} alt="logo" />
+            <img className="" src={tacoLogo} alt="logo" />
           </a>
         </div>
-
         <div
           onClick={() => setOpen(!open)}
           className="absolute top-[13px] left-[341.52px] md:hidden"
@@ -64,82 +41,33 @@ const Nav = () => {
           <ion-icon name="close-outline"></ion-icon>
         </div>
 
-        <nav id="main-navigation" className=" flex-col md:flex">
+        <div
+          className="bg-black text-right md:text-center
+        "
+        >
           <ul
-            data-visible="false"
-            aria-expanded="false"
-            className={`mobile-navigation-toggle pr-[34px] pd:mr-0 md:gap-20 md:flex fixed bg-black md:left-auto md:top-auto md:bottom-auto md:right-auto md:relative ${
-              open && !isDesktopOrMd
-                ? "left-[27.5%] top-0 bottom-0 right-0"
-                : ""
+            className={` w-auto md:h-full h-screen md:flex md:items-center  md:pb-0 pb-12 absolute md:static bg-black md:z-auto left-0 md:w-auto md:pl-0 ${
+              open ? "left-[30%] top-0 bottom-0 right-0" : "left-[100%]"
             }`}
           >
-            {Links.map((link) => (
-              <li
-                key={link.name}
-                className=" md:my-0 my-12 text-white font- text-right md:flex md:items-center"
-              >
-                <a
-                  onClick={handleMenuItemClick}
-                  href={link.link}
-                  className=" font-Roboto font-bold text-[19px]"
+            <div className="bg-black text-[19px] font-bold text-white md:flex md:pt-0 pt-[20px] text-right md:gap-28 pr-[40px] md:pr-0 items-center">
+              {navLinks.map((nav) => (
+                <li
+                  key={nav.id}
+                  className="md:ml-8 md:my-0 my-7 bg-black pb-[44px] md:pb-0"
                 >
-                  {link.name}
-                </a>
-              </li>
-            ))}
+                  <a
+                    href={`#${nav.id}`}
+                    className=" bg-black font-Roboto font-bold text-[19px]"
+                  >
+                    {nav.title}
+                  </a>
+                </li>
+              ))}
 
-            {/* Desktop NAV */}
-
-            <div
-              id="nav-button"
-              className="text-right hidden font-Roboto md:flex"
-            >
               <Button
                 onClick={handleButtonClick}
-                style={{
-                  color: "white",
-                  height: "45px",
-                  width: "145px",
-                  padding: "0",
-                  font: "Roboto",
-                }}
-              >
-                Order Now
-              </Button>
-            </div>
-          </ul>
-        </nav>
-
-        {/* DESKTOP VIEW */}
-
-        <nav className=" flex-col hidden md:flex">
-          <ul
-            data-visible="false"
-            aria-expanded="false"
-            className={`mobile-navigation-toggle pd:mr-0 md:gap-20 md:flex fixed bg-black md:left-auto md:top-auto md:bottom-auto md:right-auto md:relative ${
-              open && !isDesktopOrMd
-                ? "left-[27.5%] top-0 bottom-0 right-0"
-                : ""
-            }`}
-          >
-            {Links.map((link) => (
-              <li
-                key={link.name}
-                className=" md:my-0 my-12 text-white font- text-right md:flex md:items-center"
-              >
-                <a
-                  href={link.link}
-                  className=" font-Roboto font-bold text-[19px]"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-
-            <div className="text-right hidden md:flex">
-              <Button
-                onClick={handleButtonClick}
+                className="text-bold"
                 style={{
                   color: "white",
                   height: "45px",
@@ -152,10 +80,10 @@ const Nav = () => {
               </Button>
             </div>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </div>
   );
 };
 
-export default Nav;
+export default App;

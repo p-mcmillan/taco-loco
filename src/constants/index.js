@@ -1,6 +1,6 @@
 export const navLinks = [
   {
-    id: "menu",
+    id: "carte",
     title: "Menu",
   },
   {
@@ -8,7 +8,7 @@ export const navLinks = [
     title: "Gallery",
   },
   {
-    id: "contact us",
+    id: "contact",
     title: "Contact Us",
   },
 ];

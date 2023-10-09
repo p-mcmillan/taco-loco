@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../../styles/css/styles.css";

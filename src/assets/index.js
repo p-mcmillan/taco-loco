@@ -19,6 +19,13 @@ import img02Hi from "./images/IMG_6163@2x.png";
 import tacoLogo from "./logo/tacologo.svg";
 import tacoSkull from "./logo/TacoLoco_logo.svg";
 
+//Menu
+import onion01 from "./logo/onions_Self.png";
+import chili01 from "./logo/Group 22.png";
+
+//Hero02
+import heroImgLo from "./images/IMG_6147.png";
+
 export {
   img01,
   img02,
@@ -35,4 +42,7 @@ export {
   img02Hi,
   tacoLogo,
   tacoSkull,
+  onion01,
+  chili01,
+  heroImgLo,
 };

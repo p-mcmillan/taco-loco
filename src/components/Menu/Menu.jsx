@@ -1,20 +1,21 @@
 import PropTypes from "prop-types";
-import chili01 from "../../assets/logo/Group 22.png";
-import chili02 from "../../assets/logo/Group 22@2x.png";
-import onion01 from "../../assets/logo/onions_Self.png";
-import onion02 from "../../assets/logo/onions_Self@2x.png";
+import { chili01, onion01 } from "../../assets/index";
+
 const Menu = (props) => {
   return (
-    <div id="carte" className="text-white mx-9 md:w-[1164px] md:mx-auto ">
+    <div
+      id="carte"
+      className="text-white mx-9 2xl:w-[1164px] md:mx-auto relative"
+    >
       {/* font Chango, Regular */}
-      <h1 className="text-[40px] text-center font-Chango md:text-[78px] md:mt-[99px] md:pt-0 md:tracking-normal">
+      <h1 className="text-[40px] text-center font-Chango md:text-[78px] md:mt-[99px] md:pt-0 md:tracking-normal mt-[33px]">
         Our Menu
       </h1>
 
       <img
         src={chili01}
         alt="chili"
-        className=" hidden md:flex absolute  right-[-20px] top-[1050px]"
+        className=" hidden md:flex absolute  right-[-260px] top-[-50px]"
       />
       <div className="">
         {/* Chapillada doesnt come in 38px closest is 36px*/}
@@ -22,7 +23,7 @@ const Menu = (props) => {
           enslasa + shared
         </p>
         {/* Desktop */}
-        <div className="hidden md:block text-[27px] space-y-6 font-Roboto pb-6">
+        <div className="hidden xl:block text-[27px] space-y-6 font-Roboto pb-6">
           <div>
             <p className="md:text-[27px] font-normal">
               TIJUANA CAESAR SALAD, CHARRED ROMAINE HEARTS, CROUTONS <br />{" "}
@@ -80,7 +81,7 @@ const Menu = (props) => {
             </p>
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="xl:hidden">
           {props.menuItemsData
             .filter((section) => section.name === "Enslasa Shared")
             .map((section, index) => (
@@ -114,7 +115,7 @@ const Menu = (props) => {
 
         {/* Desktop */}
 
-        <div className="hidden md:block text-[27px] space-y-9 font-Roboto pb-6">
+        <div className="hidden xl:block text-[27px] space-y-9 font-Roboto pb-6">
           <div>
             <p>
               SMOKED BEEF BRISKET BARBACOA, PICKLED RED ONIONS, QUESO
@@ -147,7 +148,7 @@ const Menu = (props) => {
             </p>
           </div>
         </div>
-        <div className="md:hidden">
+        <div className="xl:hidden">
           {props.menuItemsData
             .filter((section) => section.name === "tacos")
             .map((section, index) => (
@@ -185,7 +186,7 @@ const Menu = (props) => {
         <p className=" uppercase text-[48px] font-Chapillada  text-greenWrong pb-6 pt-9">
           dessert
         </p>
-        <div className="hidden md:block text-[27px] space-y-9 font-Roboto pb-6">
+        <div className="hidden xl:block text-[27px] space-y-9 font-Roboto pb-6">
           <div>
             <p>
               FRESH CHURROS TOSSED IN CINNAMON + CANE SUGAR <br /> W/ CHOICE OF
@@ -194,19 +195,14 @@ const Menu = (props) => {
             </p>
           </div>
         </div>
-        <div
-          id="onion"
-          className="relative right-[-1100px] top-[350px] overflow-hidden w-[465.70px] h-[438px] z-0"
-        >
-          <img
-            id="outter"
-            src={onion01}
-            alt="onion"
-            className="w-[465.70px] h-[438px] z-0 hidden object-contain overflow-hidden	"
-          />
-        </div>
 
-        <div className="md:hidden">
+        <img
+          src={onion01}
+          alt="onion"
+          className=" right-[-500px] top-[1480px] z-0 object-contain absolute overflow-hidden	"
+        />
+
+        <div className="xl:hidden">
           {props.menuItemsData
             .filter((section) => section.name === "dessert")
             .map((section, index) => (

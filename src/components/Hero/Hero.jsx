@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/element/css/autoplay";
 
 import { img01Lo, img01Hi, img02Lo, img02Hi } from "../../assets/index";
-//fix background of image i made it black for now
+
 const Hero = () => {
   return (
     <div className="pt-[54px] md:pt-[81px] bg-black">

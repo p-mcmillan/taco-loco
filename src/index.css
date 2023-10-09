@@ -22,3 +22,7 @@ ion-icon {
   color: white;
   font-size: 32px;
 }
+
+#root {
+  overflow: hidden;
+}

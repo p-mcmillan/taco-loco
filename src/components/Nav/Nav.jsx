@@ -6,10 +6,18 @@ import { tacoLogo, tacoSkull } from "../../assets";
 
 const App = () => {
   const handleButtonClick = () => {
-    alert("This function is not functional yet.");
+    alert("Please call 604-733-3323 to order.");
   };
 
   const [open, setOpen] = useState(false);
+
+  const toggleSlider = () => {
+    setOpen(!open);
+  };
+
+  const handleLinkClick = () => {
+    toggleSlider();
+  };
 
   return (
     <div className="shadow-md w-full z-50 fixed bg-blue top-0 left-0 bg-black md:h-[81px] h-[54px]">
@@ -59,6 +67,7 @@ const App = () => {
                   <a
                     href={`#${nav.id}`}
                     className=" bg-black font-Roboto font-bold text-[19px]"
+                    onClick={handleLinkClick}
                   >
                     {nav.title}
                   </a>

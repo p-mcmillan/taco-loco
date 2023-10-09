@@ -7,13 +7,17 @@ const PopUp = ({ openPopUp, closePopUp, image }) => {
     }
   };
 
+  const handleCloseClick = () => {
+    closePopUp();
+  };
+
   if (!openPopUp || !image) return null;
 
   return (
     <div
       id="ModelContainer"
       onClick={handleLosePopUp}
-      className="fixed inset-0 bg-black flex justify-center items-center bg-opacity-20 backdrop-blur-sm"
+      className="fixed inset-0 bg-black flex justify-center items-center bg-opacity-20 backdrop-blur-sm z-50"
     >
       <div
         className="p-1 bg-black
@@ -26,6 +30,10 @@ const PopUp = ({ openPopUp, closePopUp, image }) => {
             className="w-full h-full object-cover"
           />
         </div>
+        <ion-icon
+          onClick={handleCloseClick}
+          name="close-circle-outline"
+        ></ion-icon>
       </div>
     </div>
   );

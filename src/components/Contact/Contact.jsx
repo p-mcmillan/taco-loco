@@ -80,7 +80,7 @@ const Contact = () => {
                       type="text"
                       name="fullName"
                       id="fullName"
-                      className=" mt-[24px] md:mt-0 mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-[318px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black border-[3px] md:w-[658px] md:h-[51px]"
+                      className=" mt-[24px] md:mt-0 mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-[318px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black border-[3px] 2xl:w-[658px] 2xl:h-[51px]"
                     />
                     <ErrorMessage
                       name="fullName"
@@ -94,7 +94,7 @@ const Contact = () => {
                       type="text"
                       name="phoneNumber"
                       id="phoneNumber"
-                      className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black md:w-[658px] md:h-[51px]"
+                      className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white  border-[#FFFFFF] bg-black 2xl:w-[658px] 2xl:h-[51px]"
                     />
                     <ErrorMessage
                       name="phoneNumber"
@@ -109,7 +109,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       autoComplete="Email"
-                      className=" mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black md:w-[658px] md:h-[51px]"
+                      className=" mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black 2xl:w-[658px] 2xl:h-[51px]"
                     />
                     <ErrorMessage
                       name="email"
@@ -126,7 +126,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     rows="4"
-                    className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black md:w-[658px] md:h-[229px]"
+                    className="mb-[16px] font-Helvetica placeholder-white py-3 px-4 block w-full h-full border-[3px] text-[16px] md:text-[19px] text-white border-[#FFFFFF] bg-black 2xl:w-[658px] 2xl:h-[229px]"
                   />
                   <ErrorMessage
                     name="message"

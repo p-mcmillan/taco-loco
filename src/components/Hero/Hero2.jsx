@@ -1,6 +1,4 @@
-import heroImgLo from "../../assets/images/IMG_6147.png";
-import heroImgHi from "../../assets/images/IMG_6147@2x.png";
-import ImageLoader from "../ImageLoader/ImageLoder";
+import { heroImgLo } from "../../assets/index";
 
 const Hero2 = () => {
   return (

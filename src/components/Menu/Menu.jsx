@@ -199,7 +199,7 @@ const Menu = (props) => {
         <img
           src={onion01}
           alt="onion"
-          className=" right-[-500px] top-[1480px] z-0 object-contain absolute overflow-hidden	"
+          className=" right-[-500px] top-[1600px] z-0 object-contain absolute overflow-hidden	"
         />
 
         <div className="xl:hidden">

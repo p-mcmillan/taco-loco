@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="bg-white h-auto w-[318px] md:w-[468px] md:h-[765px] mx-[36px] 2xl:mx-0">
       <div className="md:ml-[22px] md:mt-[122px] ">
-        <h1 className="text-[40px] md:text-[48px] font-Chango text-[#D6134B] uppercase md:mb-[33px]  mt-[25px] md:mt">
+        <h1 className="text-[40px] md:text-[48px] font-Chango font-bold text-[#D6134B] uppercase md:mb-[33px]  mt-[25px] md:mt">
           tacoloco:
           <br />
           “fun latin”

@@ -14,9 +14,9 @@ const Hero = () => {
   document.documentElement.style.setProperty("--swiper-theme-color", "white");
 
   return (
-    <div className="pt-[54px] md:pt-[81px] bg-black">
+    <div className="min-h-screen bg-black flex items-center justify-center pt-[54px] md:pt-[81px]">
       <Swiper
-        className="bg-black"
+        className="h-full w-full bg-black"
         navigation={true}
         centeredSlides={true}
         modules={[Navigation, Pagination]}
@@ -29,13 +29,19 @@ const Hero = () => {
       >
         <SwiperSlide>
           <ImageLoader
-            className="bg-black"
+            className="h-screen w-screen object-cover bg-black"
             src={img02Hi}
             placeholderSrc={img02Lo}
+            alt="Image 1"
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ImageLoader src={img01Hi} placeholderSrc={img01Lo} />
+          <ImageLoader
+            className="h-screen w-screen object-cover bg-black"
+            src={img01Hi}
+            placeholderSrc={img01Lo}
+            alt="Image 2"
+          />
         </SwiperSlide>
       </Swiper>
     </div>

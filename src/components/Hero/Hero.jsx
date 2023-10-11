@@ -14,7 +14,10 @@ const Hero = () => {
   document.documentElement.style.setProperty("--swiper-theme-color", "white");
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center pt-[54px] md:pt-[81px]">
+    <div className="min-h-screen  bg-black flex flex-col items-center justify-center pt-[54px] md:pt-[81px] relativ">
+      <h1 className="z-50 text-[40px] md:text-[48px] font-Chango text-[#D6134B] font-bold flex absolute">
+        Mexican=Fun
+      </h1>
       <Swiper
         className="h-full w-full bg-black"
         navigation={true}

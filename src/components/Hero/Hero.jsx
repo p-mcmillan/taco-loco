@@ -1,5 +1,4 @@
 import ImageLoader from "../ImageLoader/ImageLoder";
-import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -15,14 +14,14 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen  bg-black flex flex-col items-center justify-center pt-[54px] md:pt-[81px] relativ">
-      <h1 className="z-50 text-[40px] md:text-[48px] font-Chango text-[#D6134B] font-bold flex absolute">
+      <h1 className="z-50 text-[40px] md:text-[48px] font-Chango text-white font-bold flex absolute">
         Mexican=Fun
       </h1>
       <Swiper
         className="h-full w-full bg-black"
-        navigation={true}
+        navigation={false}
         centeredSlides={true}
-        modules={[Navigation, Pagination]}
+        modules={[Pagination]}
         centeredSlidesBounds={true}
         pagination={true}
         autoplay={{

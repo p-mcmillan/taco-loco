@@ -35,6 +35,7 @@ const Hero = () => {
             src={img02Hi}
             placeholderSrc={img02Lo}
             alt="Image 1"
+            loading="lazy"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -43,6 +44,7 @@ const Hero = () => {
             src={img01Hi}
             placeholderSrc={img01Lo}
             alt="Image 2"
+            loading="lazy"
           />
         </SwiperSlide>
       </Swiper>

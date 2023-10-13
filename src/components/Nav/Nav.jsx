@@ -4,7 +4,7 @@ import { navLinks } from "../../constants";
 import { tacoLogo, tacoSkull } from "../../assets";
 import "../../styles/css/styles.css";
 
-const App = () => {
+const Nav = () => {
   const handleButtonClick = () => {
     alert("Please call 604-733-3323 to order.");
   };
@@ -95,4 +95,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Nav;

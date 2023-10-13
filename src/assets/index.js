@@ -11,9 +11,9 @@ import img09 from "./images/View_recent_photos_1 (2).jpeg";
 
 //Hero
 import img01Lo from "./images/IMG_6187.png";
-import img01Hi from "./images/IMG_6187@2x.png";
+import img01Hi from "./images/IMG_6187@2x.webp";
 import img02Lo from "./images/IMG_6163.png";
-import img02Hi from "./images/IMG_6163@2x.png";
+import img02Hi from "./images/IMG_6163@2x.webp";
 
 //Logo
 import tacoLogo from "./logo/tacologo.svg";
@@ -24,7 +24,7 @@ import onion01 from "./logo/onions_Self.png";
 import chili01 from "./logo/Group 22.png";
 
 //Hero02
-import heroImgLo from "./images/IMG_6147.png";
+import heroImgLo from "./images/IMG_6147@2x.webp";
 
 export {
   img01,

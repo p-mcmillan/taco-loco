@@ -16,7 +16,7 @@ const About = () => {
         <h1 className="text-[40px] md:text-[48px] font-Chango font-bold text-[#D6134B] uppercase md:mb-[33px]  mt-[25px] md:mt">
           tacoloco:
           <br />
-          “fun latin”
+          <span className="md:text-[38px] text-[28px]">“fun=mexican”</span>
         </h1>
       </div>
       <div className="md:ml-[71px] md:mb-[181px] md:mr-[21px] ml-[26px] mr-[24px]">

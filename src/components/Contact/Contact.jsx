@@ -6,15 +6,14 @@ import Button from "../Button/Button";
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  // console.log(import.meta.env.VITE_FORM_SUBMIT);
+  const URL = import.meta.env.VITE_FORM_SUBMIT;
 
   const handleSubmit = async (values, actions) => {
     try {
       console.log("Submitting data:", values);
-      const response = await axios.post(
-        "http://localhost:6969/contact",
-        values
-      );
-      console.log(response, "post successful");
+      const response = await axios.post({ URL }, values);
+      console.log(response.data);
       setIsSubmitted(true);
     } catch (error) {
       console.error(error, "Oops, post didn't work, sorry.");
@@ -55,7 +54,7 @@ const Contact = () => {
       <div className="md:w-[1540] mx-auto">
         {isSubmitted ? (
           <div className="flex flex-col border p-4 sm:p-6 lg:p-8 dark:border-[#030201]">
-            <h2 className="mb-8 text-xl text-[#030201]">
+            <h2 className="mb-8 text-white text-[16px] md:text-[19px] font-Roboto">
               Thank you for contacting us!
             </h2>
             <p>Your message has been successfully submitted.</p>

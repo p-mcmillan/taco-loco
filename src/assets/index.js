@@ -20,7 +20,7 @@ import tacoLogo from "./logo/tacologo.svg";
 import tacoSkull from "./logo/TacoLoco_logo.svg";
 
 //Menu
-import onion01 from "./logo/onions_Self.png";
+import onion01 from "./logo/onions_Self.webp";
 import chili01 from "./logo/Group 22.png";
 
 //Hero02

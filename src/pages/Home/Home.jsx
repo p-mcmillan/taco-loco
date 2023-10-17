@@ -7,6 +7,7 @@ import Delivery from "../../components/Delivery/Delivery";
 import Hero from "../../components/Hero/Hero";
 import Menu from "../../components/Menu/Menu";
 import Hero2 from "../../components/Hero/Hero2";
+import { lazy } from "react";
 import Gallery from "../../components/Gallery/Gallery";
 import PopUp from "../../components/PopUp/PopUp";
 

@@ -3,9 +3,20 @@ import Button from "../Button/Button";
 import { navLinks } from "../../constants";
 import { tacoLogo, tacoSkull } from "../../assets";
 import "../../styles/css/styles.css";
+import CustomAlert from "../CustomAlert/CustomAlert";
 
 const Nav = () => {
-  const handleButtonClick = () => {};
+  // const handleButtonClick = () => {};
+
+  const [showAlert, setShowAlert] = useState(false); // State to manage the visibility of the custom alert
+
+  const handleAlertClick = () => {
+    setShowAlert(true); // Show the custom alert when the button is clicked
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false); // Close the custom alert when the close button is clicked
+  };
 
   const [open, setOpen] = useState(false);
 
@@ -71,20 +82,26 @@ const Nav = () => {
                   </a>
                 </li>
               ))}
-
               <Button
-                onClick={handleButtonClick}
-                className="font-medium font-Helvetica"
+                onClick={handleAlertClick}
+                // onClick={handleButtonClick}
+                className="font-medium font-Roboto"
                 style={{
                   color: "white",
                   height: "45px",
                   width: "145px",
                   padding: "0",
-                  fontFamily: "Helvetica",
+                  fontFamily: "Roboto",
                 }}
               >
                 Order Now
               </Button>
+              {showAlert && (
+                <CustomAlert
+                  message="Please call 604-733-3323 to place and order or email us below"
+                  onClose={handleCloseAlert}
+                />
+              )}
             </div>
           </ul>
         </div>

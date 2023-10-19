@@ -5,9 +5,7 @@ import { tacoLogo, tacoSkull } from "../../assets";
 import "../../styles/css/styles.css";
 
 const Nav = () => {
-  const handleButtonClick = () => {
-    alert("Please call 604-733-3323 to order.");
-  };
+  const handleButtonClick = () => {};
 
   const [open, setOpen] = useState(false);
 
@@ -76,13 +74,13 @@ const Nav = () => {
 
               <Button
                 onClick={handleButtonClick}
-                className="text-bold"
+                className="font-medium font-Helvetica"
                 style={{
                   color: "white",
                   height: "45px",
                   width: "145px",
                   padding: "0",
-                  fontFamily: "Roboto",
+                  fontFamily: "Helvetica",
                 }}
               >
                 Order Now

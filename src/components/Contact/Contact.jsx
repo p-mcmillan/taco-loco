@@ -137,11 +137,12 @@ const Contact = () => {
 
               <div className="mt-6 grid">
                 <Button
-                  className="h-10 w-48 font-Helvetica text-[19px] font-bold	"
+                  className="h-10 w-48 font-Helvetica text-[19px] font-medium"
                   type="submit"
                   style={{
                     backgroundColor: "#EB7513",
                     color: "white",
+                    fontFamily: "Helvetica",
                   }}
                 >
                   Submit Now

@@ -36,10 +36,11 @@ const About = () => {
         </div>
         <div className="font-Helvetica md:text-[19px] font-bold	mb-[25px] mt-2">
           <Button
-            className="h-10 w-48"
+            className="h-10 w-48 font-Helvetica font-medium"
             type="submit"
             style={{
               color: "white",
+              fontFamily: "Helvetica",
             }}
             onClick={handleEmailClick}
           >

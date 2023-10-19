@@ -1,9 +1,7 @@
 import Button from "../Button/Button";
 
 const Delivery = () => {
-  const handleButtonClick = () => {
-    alert("Please call 604-733-3323 to order!");
-  };
+  const handleButtonClick = () => {};
   return (
     <div className="bg-grayTaco h-auto w-[318px] md:w-[468px] md:h-[765px] z-40 mx-[36px] 2xl:mx-0">
       <div className="h-[414px] md:ml-[56px] md:mt-[192px] md:mr-[55px] ml-[26px] mr-[24px]">
@@ -22,10 +20,11 @@ const Delivery = () => {
         <div className=" font-Helvetica font-bold text-[19px] md:mt-1 pt-[155px] md:pt-0">
           <Button
             onClick={handleButtonClick}
-            className="h-10 w-48"
+            className="h-10 w-48 font-medium"
             type="submit"
             style={{
               color: "white",
+              fontFamily: "Helvetica",
             }}
           >
             Order Now

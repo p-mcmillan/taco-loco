@@ -33,7 +33,7 @@ const Nav = () => {
       <div className="md:flex items-center bg-black w-full justify-between relative py-4 2xl:pl-[148.23px] 2xl:pr-[140px] px-7 md:h-[81px] h-[54px]">
         <div>
           <img
-            className="nav-skull fixed 2xl:left-[80px] 2xl:top-[17px] xl:left-[80px] xl:top-[17px] lg:left-[30px] lg:top-[17px] top-17 left-5"
+            className="nav-skull fixed 2xl:left-[80px] 2xl:top-[17px] xl:left-[80px] xl:top-[17px] lg:left-[30px] lg:top-[17px] md:top-[17px] top-17 left-5"
             src={tacoSkull}
             alt="skull"
           />

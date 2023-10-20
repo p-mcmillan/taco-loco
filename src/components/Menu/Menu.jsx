@@ -81,7 +81,7 @@ const Menu = (props) => {
             </p>
           </div>
         </div>
-        <div className="">
+        <div className="xl:hidden">
           {props.menuItemsData
             .filter((section) => section.name === "enslasa shared")
             .map((section, index) => (
@@ -199,7 +199,7 @@ const Menu = (props) => {
         <img
           src={onion01}
           alt="onion"
-          className="hidden sm:block lg:right-[-500px] lg:top-[1800px] 2xl:right-[-500px] 2xl:top-[2390px] xl:right-[-300px] xl:top-[2390px] z-0 object-contain absolute overflow-hidden	"
+          className="hidden sm:block lg:right-[-500px] lg:top-[1800px] 2xl:right-[-500px] 2xl:top-[1590px] xl:right-[-250px] xl:top-[1590px] z-0 object-contain absolute overflow-hidden	"
         />
 
         <div className="xl:hidden">

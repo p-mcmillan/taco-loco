@@ -2,9 +2,9 @@ import { heroImgLo } from "../../assets/index";
 
 const Hero2 = () => {
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div className=" flex flex-col items-center justify-center z-30">
       <div
-        className=" h-[414px] w-[318px] md:w-[467px] md:h-[765px]"
+        className=" h-[414px] xl:h-[486px] md:h-[486px] lg:h-[486px] w-[318px] 2xl:w-[467px] 2xl:h-[765px]"
         style={{
           backgroundImage: `url(${heroImgLo})`,
           backgroundSize: "cover",

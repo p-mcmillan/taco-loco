@@ -5,7 +5,7 @@ const Menu = (props) => {
   return (
     <div
       id="carte"
-      className="text-white mx-9 2xl:w-[1164px] md:mx-auto relative"
+      className="text-white mx-9 2xl:w-[1164px] 2xl:mx-auto relative"
     >
       {/* font Chango, Regular */}
       <h1 className="text-[40px] text-center font-Chango md:text-[78px] md:mt-[99px] md:pt-0 md:tracking-normal mt-[33px]">
@@ -81,9 +81,9 @@ const Menu = (props) => {
             </p>
           </div>
         </div>
-        <div className="xl:hidden">
+        <div className="">
           {props.menuItemsData
-            .filter((section) => section.name === "Enslasa Shared")
+            .filter((section) => section.name === "enslasa shared")
             .map((section, index) => (
               <div key={index} className="">
                 {section.menu.map((menuItem, itemIndex) => (
@@ -199,7 +199,7 @@ const Menu = (props) => {
         <img
           src={onion01}
           alt="onion"
-          className=" right-[-500px] top-[1590px] z-0 object-contain absolute overflow-hidden	"
+          className="hidden sm:block lg:right-[-500px] lg:top-[1800px] 2xl:right-[-500px] 2xl:top-[2390px] xl:right-[-300px] xl:top-[2390px] z-0 object-contain absolute overflow-hidden	"
         />
 
         <div className="xl:hidden">

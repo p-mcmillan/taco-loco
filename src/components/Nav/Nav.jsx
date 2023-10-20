@@ -33,12 +33,17 @@ const Nav = () => {
       <div className="md:flex items-center bg-black w-full justify-between relative py-4 2xl:pl-[148.23px] 2xl:pr-[140px] px-7 md:h-[81px] h-[54px]">
         <div>
           <img
-            className="nav-skull fixed left-[80px] top-[17px]"
+            className="nav-skull fixed 2xl:left-[80px] 2xl:top-[17px] xl:left-[80px] xl:top-[17px] lg:left-[30px] lg:top-[17px] top-17 left-5"
             src={tacoSkull}
             alt="skull"
           />
         </div>
-        <div className="md:w-[282px] w-[40%] md:fixed flex justify-center md:mt-[15.29px] md:mb-4 ">
+        <div className="2xl:w-[282px] w-[40%] md:fixed flex justify-center md:mt-[15.29px] md:mb-4 md:ml-0 ml-7">
+          {/* <img
+            className="nav-skull fixed left-[80px] top-[17px]"
+            src={tacoSkull}
+            alt="skull"
+          /> */}
           <a href="/">
             <img className="" src={tacoLogo} alt="logo" />
           </a>
@@ -67,7 +72,7 @@ const Nav = () => {
               open ? "left-[30%] top-0 bottom-0 right-0" : "left-[100%]"
             }`}
           >
-            <div className="bg-black text-[19px] font-bold text-white md:flex md:pt-0 pt-[20px] text-right md:gap-28 pr-[40px] md:pr-0 items-center">
+            <div className="bg-black text-[19px] font-bold text-white md:flex md:pt-0 pt-[20px] text-right xl:gap-20 lg:gap-10 2xl:gap-28 pr-[40px] md:pr-0 items-center">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -85,20 +90,21 @@ const Nav = () => {
               <Button
                 onClick={handleAlertClick}
                 // onClick={handleButtonClick}
-                className="font-medium font-Roboto"
+                className="font-bold font-Roboto"
                 style={{
                   color: "white",
                   height: "45px",
                   width: "145px",
                   padding: "0",
                   fontFamily: "Roboto",
+                  fontWeight: "bold",
                 }}
               >
                 Order Now
               </Button>
               {showAlert && (
                 <CustomAlert
-                  message="Please call 604-733-3323 to place and order or email us below"
+                  message="Please call 604-733-3323 to place an order or email us below"
                   onClose={handleCloseAlert}
                 />
               )}

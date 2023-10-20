@@ -1,4 +1,4 @@
-#main-navigation[data-visible="true"] {
+#main-navigation[data-visible=true] {
   visibility: hidden;
 }
 
@@ -9,7 +9,8 @@
 
 @media (max-width: 786px) {
   .nav-skull {
-    display: none;
+    width: 24px !important;
+    height: 24px !important;
   }
   #notFound {
     height: calc(100vh - 85px);
@@ -76,12 +77,4 @@
 
 .swiper-button-prev:after {
   display: none;
-} /*# sourceMappingURL=styles.css.map */
-
-.swiper-theme-color {
-  background-color: white;
-}
-
-.swiper-slide {
-  background-color: black;
-}
+}/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    name: "Enslasa Shared",
+    name: "enslasa shared",
     submenu: true,
     menu: [
       {

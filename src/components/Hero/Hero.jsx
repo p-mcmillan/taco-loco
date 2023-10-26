@@ -45,8 +45,8 @@ const Hero = () => {
           />
         </SwiperSlide>
       </Swiper>
-      <h1 className="z-40 text-[40px] md:text-[48px] font-Chango text-white font-bold flex absolute bottom-[40px]">
-        Mexican=Fun
+      <h1 className="z-40 text-[38px] md:text-[48px] font-Chango text-white font-bold flex absolute bottom-[40px]">
+        Mexican = Fun
       </h1>
     </div>
   );

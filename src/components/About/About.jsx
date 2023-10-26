@@ -16,7 +16,7 @@ const About = () => {
         <p className="text-[35px] 2xl:text-[48px] font-Chango font-bold text-[#D6134B] uppercase 2xl:mb-[33px] mt-[25px] 2xl:mt text-center 2xl:text-left">
           tacoloco:
           <br />
-          <span className="2xl:text-[35px] text-[24px]">“mexican=fun”</span>
+          <span className="2xl:text-[35px] text-[24px]">“mexican = fun”</span>
         </p>
       </div>
       <div className="2xl:ml-[71px] 2xl:mb-[181px] 2xl:mr-[21px] ml-[26px] mr-[24px]">

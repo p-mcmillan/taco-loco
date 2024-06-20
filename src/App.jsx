@@ -20,7 +20,7 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home menuItemsData={menuItemsData} />} />
+        <Route path="/taco-loco/" element={<Home menuItemsData={menuItemsData} />} />
         <Route path="/notFound" element={<NotFound />} />
         <Route path="*" element={<Navigate to="/notFound" />} />
       </Routes>

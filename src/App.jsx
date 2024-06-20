@@ -21,8 +21,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/taco-loco/" element={<Home menuItemsData={menuItemsData} />} />
-        <Route path="/notFound" element={<NotFound />} />
-        <Route path="*" element={<Navigate to="/notFound" />} />
+        <Route path="/taco-loco/notFound/" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/taco-loco/notFound/" />} />
       </Routes>
       <Footer />
     </Router>

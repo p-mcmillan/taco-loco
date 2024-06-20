@@ -21,7 +21,7 @@ const notFound = () => {
             </p>
             <a
               rel="noopener noreferrer"
-              href="/"
+              href="/taco-loco"
               className="px-8 py-3 font-bold font-Helvetica md:text-[19px] uppercase bg-orangeTaco text-white"
             >
               Back to homepage
